@@ -5,16 +5,23 @@ document.getElementById('draw').addEventListener('click', function() {
     const el = document.getElementById('result');
     switch(result){
         case '大吉':
-            el.style.color = 'red';
+            el.style.color = 'gold';
             break;
         case '中吉':
             el.style.color = 'orange';
             break;
-        case '大凶':
+        case '小吉':
+            el.style.color = 'green';
+            break;
+        case '末吉':
+            el.style.color = 'gray';
+            break;
+        case '凶':
             el.style.color = 'blue';
             break;
-        default :
-            el.style.color = 'black';
+        case '大凶':
+            el.style.color = 'darkblue';
+            break;
     }
     document.getElementById('result').textContent = `あなたの運勢は... ${result}!`;
 })
